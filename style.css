@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+}
+.navbar-side img:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+    .navbar-side {
+        width: 100%; /* Make it a full-width navbar */
+        top: auto;
+        bottom: 0;
+        transform: none; /* Reset centering */
+    }
+    .body-content {
+        margin-left: 0; /* Remove side navbar margin */
+    }
+}
+.navbar-side .nav-item {
+    margin-bottom: 10px; /* Space between links */
+}
+
+.navbar {
+    background-color: #0069d9;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.img-fluid {
+    border-radius: 10px;
+}

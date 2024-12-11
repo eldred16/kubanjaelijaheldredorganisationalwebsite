@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees - KEE TECH SOLUTIONS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Body Background */
+        body {
+            background-image: url(we.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Glowing Navbar Styling */
+        .navbar {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: glowing 1.5s ease-in-out infinite;
+        }
+
+        .navbar .navbar-brand {
+            color: white !important;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar .nav-link:hover {
+            color: #ff6ec7;
+        }
+
+        /* Glowing Animation */
+        @keyframes glowing {
+            0% { box-shadow: 0 0 10px #6a11cb, 0 0 20px #2575fc, 0 0 30px #ff6ec7; }
+            50% { box-shadow: 0 0 20px #6a11cb, 0 0 40px #2575fc, 0 0 60px #ff6ec7; }
+            100% { box-shadow: 0 0 10px #6a11cb, 0 0 20px #2575fc, 0 0 30px #ff6ec7; }
+        }
+
+        /* Section Title */
+        h2 {
+            text-align: center;
+            color: #2575fc;
+            margin-top: 80px;
+            font-size: 3rem;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Employee Card Styling */
+        .employee-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .employee-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .employee-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .employee-info {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .employee-card:hover .employee-info {
+            opacity: 1;
+        }
+
+        .employee-info h4 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .employee-info p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Layout */
+        .employee-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Adding Some Padding to the Section */
+        section.container {
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">KEE TECH SOLUTIONS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="employees.html">Employees</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Employees Section -->
+    <section class="container">
+        <h2>Our Employees</h2>
+        <div class="employee-row">
+            <!-- Employee 1 -->
+            <div class="employee-card">
+                <img src="em2.jpg" alt="Employee 1">
+                <div class="employee-info">
+                    <h4>MRS. BABIRYE FAITH</h4>
+                    <p>Position: Developer</p>
+                </div>
+            </div>
+
+            <!-- Employee 2 -->
+            <div class="employee-card">
+                <img src="em3.jpg" alt="Employee 2">
+                <div class="employee-info">
+                    <h4>MR. BAKULUMPAGI EDWIN</h4>
+                    <p>Position: Designer</p>
+                </div>
+            </div>
+
+            <!-- Employee 3 -->
+            <div class="employee-card">
+                <img src="em1.jpg" alt="Employee 3">
+                <div class="employee-info">
+                    <h4>MR. KUBANJA ELIJAH ELDRED</h4>
+                    <p>Position: Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

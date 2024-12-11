@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEE TECH SOLUTIONS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Header Navigation Bar */
+        .navbar-top {
+            background-color: #0072ff;
+            box-shadow: 0 0 20px rgba(0, 114, 255, 0.7);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+body{
+    background-image: url(tec.jpg);
+}
+        /* Footer Navigation Bar */
+        .navbar-bottom {
+            background-color: #00c6ff;
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.7);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* Side Navigation Bar */
+        .navbar-side {
+            background-color: #ff5722;
+            box-shadow: 0 0 20px rgba(255, 87, 34, 0.7);
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 1000;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar-side .nav-link {
+            text-align: left;
+            color: white;
+        }
+
+        /* CEO Image Section */
+        .navbar-side img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+        }
+
+        .navbar-side .ceo-title {
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Nav Links Style */
+        .navbar .nav-link {
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .nav-link:hover {
+            color: #fff;
+            text-shadow: 0 0 15px #fff, 0 0 25px #fff;
+        }
+
+        .body-content {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            margin-left: 210px; /* Space for the side navbar */
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">KUBANJA ELIJAH ELDRED</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="container mt-5">
+        <h2 style="color: #fff;">About Us</h2>
+        <p class="animated-text" style="color: #fff;">
+            KEE TECH SOLUTIONS is a leading software development company specializing in innovative solutions.<br>
+            We provide high-quality software services and products designed to meet the needs of businesses and individuals alike.
+        </p>
+    </section>
+    
+    <style>
+        /* Animation Keyframes */
+        @keyframes text-motion {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateX(10%);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+    
+        /* Apply Animation to Text */
+        .animated-text {
+            display: inline-block;
+            animation: text-motion 3s ease-in-out infinite alternate;
+        }
+    </style>
+    
+    <!-- Side Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-side flex-column">
+        <img src="ceo.jpg" alt="CEO">
+        <div class="ceo-title">THE CEO</div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="event.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Products</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-bottom">
+        <div class="container-fluid">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="employees.html">Employees</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="body-content">
+        <header class="bg-info text-white text-center py-5">
+            <h1 style="color: black;">WELCOME TO KEE TECH SOLUTIONS</h1>
+            <p>Innovative software solutions for a brighter future</p>
+        </header>
+        <section class="container mt-5">
+            <h2 style="color: #fff;">About Us</h2>
+            <p style="color: #fff;">
+                KEE TECH SOLUTIONS is a leading software development company specializing in innovative solutions.<br>
+                We provide high-quality software services and products designed to meet the needs of businesses and individuals alike.
+            </p>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
